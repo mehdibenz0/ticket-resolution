@@ -1,0 +1,37 @@
+services:
+  api:
+    build: .
+    container_name: resolution-copilot-api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+
+  ui:
+    build: .
+    container_name: resolution-copilot-ui
+    env_file:
+      - .env
+    command: streamlit run ui/app.py --server.address 0.0.0.0 --server.port 8501
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
+    depends_on:
+      - api
+
+  n8n:
+    image: n8nio/n8n:1.121.0
+    container_name: resolution-copilot-n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=Europe/Zurich
+    volumes:
+      - ./n8n_data:/home/node/.n8n

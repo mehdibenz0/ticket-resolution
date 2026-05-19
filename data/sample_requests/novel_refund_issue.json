@@ -1,0 +1,11 @@
+{
+  "client_company": "Romandie Mobility SA",
+  "requester_role": "Finance & Benefits Lead",
+  "channel": "email",
+  "subject": "Card balance mismatch after a reversed food purchase",
+  "message": "A user reports that a restaurant transaction was reversed by the merchant, but the available card balance appears unchanged after 48 hours. We cannot tell whether the amount should already have been credited back.",
+  "metadata": {
+    "employee_identifier_present": true,
+    "account_identifier_present": true
+  }
+}

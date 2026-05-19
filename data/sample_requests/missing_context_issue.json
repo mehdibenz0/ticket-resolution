@@ -1,0 +1,11 @@
+{
+  "client_company": "Helvetia Labs AG",
+  "requester_role": "People Ops",
+  "channel": "form",
+  "subject": "Portal issue",
+  "message": "Something does not work. Please help.",
+  "metadata": {
+    "employee_identifier_present": false,
+    "account_identifier_present": false
+  }
+}

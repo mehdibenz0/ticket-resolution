@@ -1,0 +1,13 @@
+{
+  "client_company": "Alpine Robotics SA",
+  "requester_role": "HR Operations Manager",
+  "channel": "email",
+  "subject": "Gift budget cannot be assigned to one employee",
+  "message": "We tried to distribute a CHF 100 reward to a new employee, but the platform rejects the action. The employee was added yesterday and appears active in our HR export.",
+  "metadata": {
+    "employee_created_recently": true,
+    "gift_amount_chf": 100,
+    "employee_identifier_present": true,
+    "account_identifier_present": true
+  }
+}
