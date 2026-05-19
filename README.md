@@ -37,9 +37,7 @@ Given a client issue, the system:
    - a confidence score and cited evidence,
    - and, when needed, a pre-filled escalation ticket.
 
-## Why this is portfolio-grade
-
-This project demonstrates more than “calling an LLM API.” It shows:
+## In this project there is:
 
 - **AI agent design** with guardrails and structured outputs
 - **RAG-style retrieval** over internal knowledge
@@ -270,6 +268,6 @@ This repo intentionally:
 
 See `docs/SECURITY.md`.
 
-## Resume / interview framing
+## Briefly
 
-> Built a B2B AI Resolution Copilot for operations teams that retrieves similar internal cases, recommends the next best action, drafts customer responses, and automatically prepares escalation tickets for genuinely novel issues. Implemented with FastAPI, Claude structured outputs, retrieval logic, n8n orchestration, an optional MCP server, and an operator-facing UI, with tests and CI for production-style delivery.
+> A B2B AI Resolution Copilot for operations teams that retrieves similar internal cases, recommends the next best action, drafts customer responses, and automatically prepares escalation tickets for genuinely novel issues. Implemented with FastAPI, Claude structured outputs, retrieval logic, n8n orchestration, an optional MCP server, and an operator-facing UI, with tests and CI for production-style delivery.
